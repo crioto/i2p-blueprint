@@ -1,0 +1,25 @@
+{
+    "name": "${name}",
+    "description": "I2P Router", 
+    "version": "1.0.0",
+    "author": "crioto",
+    "containers": [
+        {
+            "hostname": "i2prouter",
+            "template": "ubuntu16",
+            "size": "SMALL"
+        }
+    ],
+    "ansible-configuration": {
+        "source-url": "https://github.com/crioto/i2p-blueprint/archive/master.zip",
+        "ansible-playbook": "setup.yml"
+    },
+    "user-variables": {
+        "name": {
+            "description": "Name your environment",
+            "type": "string",
+            "default": "my-i2p-router",
+            "validation": "[a-zA-Z0-9]+"
+        }
+    }
+}
