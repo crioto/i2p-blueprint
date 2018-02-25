@@ -7,12 +7,13 @@
         {
             "hostname": "i2prouter",
             "template": "ubuntu16",
+            "peer-criteria": "4R",
             "size": "SMALL"
         }
     ],
     "peer-criteria": [
         {
-            "name": "HTTP-GROUP",
+            "name": "4R",
             "max-price": "5",
             "avg-cpu-load": "50",
             "min-free-ram": "128",
